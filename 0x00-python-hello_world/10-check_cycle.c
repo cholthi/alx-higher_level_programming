@@ -8,14 +8,14 @@
  *
  * Return: int 0 if no loops or 1 if loops detected
  */
-int check_cycle(listint_t *h)
+int check_cycle(listint_t *list)
 {
-	listint_t *slow=h,*fast=NULL;
+	listint_t *slow=list,*fast=NULL;
     
-	if(!h || !(h->next))
+	if(!list || !(list->next))
 		return false;
 
-	fast=h->next;
+	fast=list->next;
 
 	while(slow!=fast)
 	{
