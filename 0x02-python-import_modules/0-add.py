@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-if __name__ == "__main__:
+if __name__ == "__main__":
     """Prints the sum of one and two."""
     from 0_add import add
 
