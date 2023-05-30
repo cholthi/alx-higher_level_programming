@@ -13,7 +13,7 @@ def safe_print_list(my_list=[], x=0):
     ret = 0
     for el in range(x):
         try:
-            print("{}".format(my_list[el], end=""))
+            print("{}".format(my_list[el]), end="")
             ret += 1
         except IndexError:
             break
