@@ -11,7 +11,7 @@ def safe_print_list(my_list=[], x=0):
         The number of elements printed.
     """
     ret = 0
-    for el in my_list:
+    for el in range(x):
         try:
             print("{}".format(my_list[el], end=""))
             ret += 1
