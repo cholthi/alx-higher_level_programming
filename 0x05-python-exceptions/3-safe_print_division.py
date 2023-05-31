@@ -2,7 +2,6 @@
 
 def safe_print_division(a, b):
     """Pint result of dividing a by b."""
-
     try:
         res =  a / b
     except (TypeError, ZeroDivisionError):
