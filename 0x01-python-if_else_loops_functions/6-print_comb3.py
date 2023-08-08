@@ -2,6 +2,6 @@
 for i in range(0, 10):
     for p in range(i + 1, 10):
         if i == 8 and p == 9:
-            print(f'{i:d}{p:d}')
+            print('{}{}'.format(i, p))
         else:
-            print(f'{i:d}{p:d}', end=", ")
+            print(f'{}{}'.format(i, p), end=", ")
