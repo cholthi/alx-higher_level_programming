@@ -34,7 +34,7 @@ listint_t *insert_node(listint_t **head, int number)
 			current = current->next;
 		}
 
-		if (prev == NULL;)
+		if (prev == NULL)
 			new->next = current;
 		else
 		{
