@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-from sys import argv
-
-arglen = len(argv) - 1
 
 if __name__ == '__main__':
+    """Prints its arguments"""
+    from sys import argv
+
+    arglen = len(argv) - 1
     if arglen == 1:
         argument = 'argument:'
     elif(arglen <= 0):
