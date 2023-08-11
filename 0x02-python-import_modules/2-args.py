@@ -8,7 +8,7 @@ if __name__ == '__main__':
     if arglen == 1:
         argument = 'argument:'
     elif arglen == 0:
-        argument = 'argument.'
+        argument = 'arguments.'
     else:
         argument = 'arguments:'
     print('{} {}'.format(arglen, argument))
