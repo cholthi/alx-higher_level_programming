@@ -15,10 +15,14 @@ if __name__ == '__main__':
         print('Unknown operator. Available operators: +, -, * and /')
         exit(1)
     if op == '+':
-        print('{} {} {} = {}'.format(operand1, op, operand2, add(int(operand1), int(operand2))))
+        print('{} {} {} = {}'.format(operand1, op, operand2, add(
+            int(operand1), int(operand2))))
     elif op == '-':
-        print('{} {} {} = {}'.format(operand1, op, operand2, sub(int(operand1), int(operand2))))
+        print('{} {} {} = {}'.format(operand1, op, operand2, sub(
+            int(operand1), int(operand2))))
     elif op == '*':
-        print('{} {} {} = {}'.format(operand1, op, operand2, mul(int(operand1), int(operand2))))
+        print('{} {} {} = {}'.format(operand1, op, operand2, mul(
+            int(operand1), int(operand2))))
     elif op == '/':
-        print('{} {} {} = {}'.format(operand1, op, operand2, div(int(operand1), int(operand2))))
+        print('{} {} {} = {}'.format(operand1, op, operand2, div(
+            int(operand1), int(operand2))))
