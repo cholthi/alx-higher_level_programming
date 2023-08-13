@@ -2,4 +2,4 @@
 
 def no_c(my_string):
     """Removes character 'c' and 'C' from string my_string"""
-    return (''.join(list((c for c in my_list if c not in 'cC'))))
+    return (''.join(list((c for c in my_string if c not in 'cC'))))
