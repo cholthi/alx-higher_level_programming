@@ -2,4 +2,4 @@
 
 def search_replace(my_list, search, replace):
     """replaces search with replace in the input list"""
-    [replace if search == i else i for i in l]
+    return ([replace if search == i else i for i in my_list])
