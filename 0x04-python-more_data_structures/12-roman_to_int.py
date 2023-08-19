@@ -8,7 +8,7 @@ def roman_to_int(roman_string):
     dec = 0
     i = 0
 
-    if not roman_string and not isinstance(roman_string, str):
+    if not roman_string and isinstance(roman_string, str):
         return (dec)
 
     while i < len(roman_string):
