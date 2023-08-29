@@ -3,7 +3,10 @@
 A square class to represent square shapes
 with private instance attribute and validation
 """
+
+
 class Square:
+    """Square class for square shapes"""
     def __init__(self, size=0, position=(0,0)):
         if not isinstance(size, int):
             raise TypeError('size must be an integer')
