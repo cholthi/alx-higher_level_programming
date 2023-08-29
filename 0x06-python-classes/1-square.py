@@ -7,5 +7,5 @@ with private instance attribute
 
 class Square:
     """Square class for square shapes"""
-    def init(self, size):
+    def __init__(self, size):
         self.__size = size

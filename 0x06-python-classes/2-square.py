@@ -7,7 +7,7 @@ with private instance attribute and validation
 
 class Square:
     """Square class for square shapes"""
-    def init(self, size):
+    def __init__(self, size):
         if not isinstance(size, int):
             raise TypeError('size must be an integer')
         if size < 0:
