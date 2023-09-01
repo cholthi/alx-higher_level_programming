@@ -1,19 +1,23 @@
 #!/usr/bin/python3
-import math
-
 
 """
 Python MagicClass class
 """
+
+import math
 
 
 class MagicClass:
     """magicClass class"""
 
     def __init__(self, radius=0):
-        """ Initializes MagicClass"""
+        """ Initializes MagicClass
+
+        Agr:
+          radius (int or float): radius of the MagicClass class
+        """
         self.__radius = 0
-        if type(radius) is not int and type(radiuss) is not float:
+        if type(radius) is not int and type(radius) is not float:
             raise TypeError('radius must be a number')
         self.__radius = radius
 
