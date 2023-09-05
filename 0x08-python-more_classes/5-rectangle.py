@@ -83,8 +83,8 @@ class Rectangle:
         """Returns this class represntation for eval"""
 
         cls = self.__class__.__name__
-        return (f'{cls}({self.__width}, {self.__height})')
+        return (str(f"{cls}({self.__width}, {self.__height})"))
 
     def __del__(self):
-        """Prints a message when obj is deleted"""
-        print('Bye rectangle ...')
+        """Print a message when Rectangle is deleted."""
+        print("Bye rectangle...")
