@@ -5,7 +5,12 @@ Empty Rectangle class module
 
 
 class Rectangle:
-    """Empty Rectangle class """
+    """Empty Rectangle class
+
+    Attributes:
+         number_of_instances (int): number of instances from this class
+         print_sysbol (str): The symbol to reresent this class __str__
+    """
 
     number_of_instances = 0
     print_symbol = '#'
@@ -71,15 +76,17 @@ class Rectangle:
         return ((self.__height * self.__width) * 2)
 
     def __str__(self):
-        """Returns the string representation of the rectangle class"""
+        """Returns the string representation of the
 
+        rectangle class
+        """
         if self.__width == 0 or self.__height == 0:
             return ('')
 
         ret = []
         for i in range(0, self.__height):
             for _ in range(0, self.__width):
-                ret.append(str(self.print_symbol))
+                ret.append(str(type(self).print_symbol))
             if i != self.__height - 1:
                 ret.append('\n')
         return (''.join(ret))
