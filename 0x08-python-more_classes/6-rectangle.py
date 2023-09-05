@@ -5,11 +5,22 @@ Empty Rectangle class module
 
 
 class Rectangle:
-    """Empty Rectangle class """
+    """Empty Rectangle class
+
+    Attributes:
+            number_of_instances (int): Number of rectangle objects
+    """
 
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
+        """Initialize a new Rectangle object.
+
+        Args:
+            width (int): The width of the new rectangle.
+            height (int): The height of the new rectangle.
+        """
+
         type(self).number_of_instances += 1
 
         if not isinstance(width, int):
@@ -91,5 +102,5 @@ class Rectangle:
 
     def __del__(self):
         """prints a message when instance of Rectangle is deleted"""
-        self.number_of_instances -= 1
+        type(self).number_of_instances -= 1
         print('Bye rectangle ...')
