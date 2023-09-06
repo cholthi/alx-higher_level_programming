@@ -4,7 +4,7 @@
 
 def print_square(size):
     """Prints a square using a # with size size
-    
+
     Args:
       size (int): size of the square
     """
