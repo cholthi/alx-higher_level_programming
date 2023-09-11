@@ -3,6 +3,8 @@
 provides a function that tests if an object is an
 instance of a Class cls
 """
+
+
 def is_same_class(obj, a_class):
     """
     Tests if obj is an instance of the class a_class
@@ -15,4 +17,3 @@ def is_same_class(obj, a_class):
     if type(obj) == a_class:
         return (True)
     return (False)
-
