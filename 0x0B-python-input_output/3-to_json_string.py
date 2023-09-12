@@ -3,6 +3,8 @@
 
 
 from json import dumps
+
+
 def to_json_string(my_obj):
     """
     encodes a python object obj to json string
