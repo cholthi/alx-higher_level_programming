@@ -5,7 +5,7 @@ instance of a Class cls
 """
 
 
-def is_kind_of_class(obj, a_class):
+def inherits_from(obj, a_class):
     """
     Tests if obj is an instance of the class a_class or
     instance of a derived class from a_class
