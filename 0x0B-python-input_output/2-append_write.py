@@ -2,7 +2,7 @@
 """provides a function that appends a string to a file"""
 
 
-def append_file(filename="", text=""):
+def append_write(filename="", text=""):
     """
     Appends a string text to file filename
 
