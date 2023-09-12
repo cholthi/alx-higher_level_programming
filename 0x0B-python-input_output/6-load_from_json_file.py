@@ -14,5 +14,5 @@ def load_from_json_file(filename):
         filename (str): The file to read the encoded json strint from
     """
     with open(filename, "r", encoding="utf-8") as f:
-        my_obj = dump(f)
+        my_obj = load(f)
         return (my_obj)
