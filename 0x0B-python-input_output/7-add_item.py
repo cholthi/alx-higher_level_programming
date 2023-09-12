@@ -2,7 +2,7 @@
 """Reads and writes to a json encoded file"""
 
 
-from sys import agrv
+from sys import argv
 
 
 if __name__ == "__main__":
