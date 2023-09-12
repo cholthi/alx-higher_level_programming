@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Provides a function that encodes an object 
+"""Provides a function that encodes an object
 as json and writes to a file
 """
 
