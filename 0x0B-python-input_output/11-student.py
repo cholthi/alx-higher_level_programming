@@ -40,4 +40,4 @@ class Student:
         """
         for attr, value in json.items():
             if hasattr(self,attr):
-                setattr(self, attrr, value)
+                setattr(self, attr, value)
