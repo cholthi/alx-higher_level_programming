@@ -39,5 +39,5 @@ class Student:
         Args: json (dict): The json to unmarshal in dict format
         """
         for attr, value in json.items():
-            if hasattr(self,attr):
+            if hasattr(self, attr):
                 setattr(self, attr, value)
