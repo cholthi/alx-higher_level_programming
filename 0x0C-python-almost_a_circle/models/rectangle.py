@@ -105,13 +105,13 @@ class Rectangle(Base):
 
     def __str__(self):
         '''Returns string representation of this class'''
-        return (f'[{type(self).__name__}] {(self.id)} {self.__x}' \
+        return (f'[{type(self).__name__}] {(self.id)} {self.__x}'
                 f'/{self.__y} - {self.__width}/{self.__height}')
 
     def update(self, *args, **kwargs):
         '''Updates attributes of this class instance'''
         if args and len(args) != 0:
-            if args[0] == None:
+            if args[0] is None:
                 self.__init__(
                         self.width, self.height, self.x, self.y)
             else:
@@ -122,13 +122,13 @@ class Rectangle(Base):
                 self.x = args[3]
                 self.y = args[4]
         elif kwargs and len(kwargs) != 0:
-                for k, v in kwargs.items():
-                    if k == 'id':
-                        if v == None:
-                            self.__init__(self.width,
-                                    self.height, self.x, self.y)
-                        else:
-                            self.id = v
+            for k, v in kwargs.items():
+                if k == 'id':
+                    if v is None:
+                        self.__init__(
+                            self.width, self.height, self.x, self.y)
+                    else:
+                        self.id = v
                     elif k == 'width':
                         self.width = v
                     elif k == 'height':
