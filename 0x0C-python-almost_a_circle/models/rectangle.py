@@ -129,14 +129,14 @@ class Rectangle(Base):
                             self.width, self.height, self.x, self.y)
                     else:
                         self.id = v
-                    elif k == 'width':
-                        self.width = v
-                    elif k == 'height':
-                        self.height = v
-                    elif k == 'x':
-                        self.x = v
-                    elif k == 'y':
-                        self.y = v
+                elif k == 'width':
+                    self.width = v
+                elif k == 'height':
+                    self.height = v
+                elif k == 'x':
+                    self.x = v
+                elif k == 'y':
+                    self.y = v
 
     def to_dictionary(self):
         '''Returns the dict representation of the rectangle'''
