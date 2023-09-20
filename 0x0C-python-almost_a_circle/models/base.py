@@ -19,7 +19,7 @@ class Base:
             id (int) or None: the id of this baseclass instance
         '''
         if id is not None:
-           self.id = id
+            self.id = id
         else:
             type(self).__no_objects += 1
             self.id = type(self).__no_objects
@@ -34,7 +34,7 @@ class Base:
             Returns:
                    string: The encoded json string
         '''
-        if list_dictionaries == None or list_dictionaries == []:
+        if list_dictionaries is None or list_dictionaries == []:
             return ('[]')
         return (json.dumps(list_dictionaries))
 
