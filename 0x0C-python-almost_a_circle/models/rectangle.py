@@ -105,7 +105,7 @@ class Rectangle(Base):
 
     def __str__(self):
         '''Returns string representation of this class'''
-        return (f'[{type(self).__name__}] {(self.id)} {self.__x}'
+        return (f'[{type(self).__name__}] ({self.id}) {self.__x}'
                 f'/{self.__y} - {self.__width}/{self.__height}')
 
     def update(self, *args, **kwargs):
