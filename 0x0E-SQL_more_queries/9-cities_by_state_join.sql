@@ -1,8 +1,8 @@
 -- Lists all cities contained in the database hbtn_0d_usa by state
-SELECT `cities.id`,`cities.name`,`states.name`
+SELECT `c.id`, `c.name`, `s.name`
 FROM
-`cities`
-INNER JOIN `states`
+`cities` AS `c`
+INNER JOIN `states` AS `s`
 ON
-`cities.state_id` = `states.id`
-ORDER BY `cities.id` ASC
+`c.state_id` = `s.id`
+ORDER BY `c.id`
