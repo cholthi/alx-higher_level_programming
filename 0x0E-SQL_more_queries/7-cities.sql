@@ -5,5 +5,5 @@ CREATE TABLE IF NOT EXISTS `hbtn_0d_usa.cities`(
 	`name` VARCHAR(256) NOT NULL,
 	`state_id` INT NOT NULL,
 	CONSTRAINT `fk_state` FOREIGN KEY (`state_id`)
-	                      REFRENCES `states`(`id`)
+	                      REFERENCES `states`(`id`)
 );
