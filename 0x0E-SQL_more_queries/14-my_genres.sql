@@ -1,4 +1,4 @@
-- Lists all genres of the show Dexter in the database hbtn_0d_tvshows.
+-- Lists all genres of the show Dexter in the database hbtn_0d_tvshows.
 -- Records are ordered by ascending genre name.
 SELECT g.`name`
 FROM
