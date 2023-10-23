@@ -6,8 +6,8 @@ FROM `tv_shows` s
 WHERE NOT EXISTS (
     SELECT 1
     FROM `tv_show_genres` sg
-    JOIN `tv_genres` g ON sg.`genre_id` = g.id
+    JOIN `tv_genres` g ON sg.`genre_id` = g.`id`
     WHERE sg.`show_id` = s.`id`
     AND g.`name` = 'Comedy'
 )
-ORDER BY title;
+ORDER BY `title`;
