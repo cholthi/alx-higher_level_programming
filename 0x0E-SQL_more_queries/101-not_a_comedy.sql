@@ -1,7 +1,7 @@
 -- Lists all shows without the genre Comedy in the database hbtn_0d_tvshows
 -- Select column tv_show.title only
 -- Order rows by show.title by asc
-SELECT *
+SELECT `title`
 FROM `tv_shows` s
 WHERE NOT EXISTS (
     SELECT 1
