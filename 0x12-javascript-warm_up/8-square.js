@@ -1,6 +1,6 @@
 #!/usr/bin/node
 const squareSize = Math.floor(Number(process.argv[2]));
-if (isNaN(SquareSize)) {
+if (isNaN(squareSize)) {
   console.log('Missing size');
 } else {
   for (let r = 0; r < squareSize; r++) {
