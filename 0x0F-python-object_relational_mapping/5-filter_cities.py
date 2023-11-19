@@ -14,9 +14,7 @@ if __name__ == "__main__":
             AS s on c.state_id = s.id where s.name = %s
             order by c.id""", (sys.argv[4], ))
     rows = cur.fetchall()
-    ltemp = []
-    for row in rows:
-        ltemp.append(row[0])
+    ltemp = [row[0] for row in rows)
     print(*ltemp, sep=", ")
     cur.close()
     db.close()
