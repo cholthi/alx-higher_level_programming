@@ -17,6 +17,6 @@ if __name__ == "__main__":
     ltemp = []
     for row in rows:
         ltemp.append(row[0])
-    print(", ".join(ltemp))
+    print(*ltemp, sep=", ")
     cur.close()
     db.close()
