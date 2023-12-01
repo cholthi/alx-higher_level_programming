@@ -11,4 +11,4 @@ with request.urlopen(url) as response:
     _type = type(data)
     decoded_utf8 = data.decode('utf8')
     print(f"Body response:\n\t- type: {_type}\n\t- content: {data}"""
-            f"\n\t- utf8 content: {decoded_utf8}""")
+          f"\n\t- utf8 content: {decoded_utf8}""")
