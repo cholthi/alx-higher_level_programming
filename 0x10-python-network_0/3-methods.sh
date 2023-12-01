@@ -1,3 +1,3 @@
 #!/bin/bash
 # Extracts list of supported http methods by a url
-curl -sI "$1" | grep -i Allow | awk -F ':' '{print $2}' | head -c -2 | rev | head -c -1 | rev
+curl -Is "$1" | grep "Allow:" | cut -d ":" -f 2 | cut -c 2- | rev | cut -c 2- | rev
