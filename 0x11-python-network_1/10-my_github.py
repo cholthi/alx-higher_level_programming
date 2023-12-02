@@ -13,10 +13,7 @@ endpoint = 'https://api.github.com/user'
 response = requests.get(endpoint, auth=(user, passwd))
 
 if response.status_code == requests.codes.ok:
-    try:
         data = response.json()
         print(data['id'])
-    except Exception as e:
-        raise e
 else:
     print(None)
