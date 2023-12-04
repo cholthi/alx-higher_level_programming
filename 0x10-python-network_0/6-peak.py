@@ -5,6 +5,7 @@ and returns the first peak number in a list
 
 
 def find_peak(list_of_integers):
+    """takes a list og ints and returns the first peak number"""
     start, end = 0, len(list_of_integers) - 1
     while start < end:
         mid = start + (end - start) // 2
